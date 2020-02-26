@@ -342,8 +342,7 @@ def long_name_steals_a_ton?
       end
     end
   end
-  
-  return most_steals_player
   binding.pry
+  return most_steals_player
   
 end 
