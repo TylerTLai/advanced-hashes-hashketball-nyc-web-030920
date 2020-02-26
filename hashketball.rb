@@ -343,7 +343,7 @@ def long_name_steals_a_ton?
       end
     end
   end
-  binding.pry
+  # binding.pry
   
   #compares most steals with longest name
   if most_steals_player == player_with_longest_name
