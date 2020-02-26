@@ -259,7 +259,9 @@ def winning_team
   away_points = 0
 
   game_hash.each do |place, team|
-    binding.pry
+    team.each do |attribute, player|
+      binding.pry
+    end
   end
   
 end
