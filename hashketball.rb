@@ -288,7 +288,7 @@ def winning_team
     if home_points > away_points
       return "Brookln Nets"
     else
-      return "Charlotte"
+      return "Charlotte Hornets"
     end
 
 end
