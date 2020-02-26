@@ -252,3 +252,13 @@ def most_points_scored
   return most_points_player
 
 end
+
+def winning_team
+  
+  
+  
+end
+
+
+def player_with_longest_name
+end
