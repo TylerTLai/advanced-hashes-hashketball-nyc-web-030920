@@ -336,7 +336,7 @@ def long_name_steals_a_ton?
           if player[:steals] > most_steals
             most_steals = player[:steals]
             most_steals_player = player[:player_name]
-            binding.pry
+            # binding.pry
           end
         end
       end
@@ -344,5 +344,6 @@ def long_name_steals_a_ton?
   end
   
   return most_steals_player
+  binding.pry
   
 end 
