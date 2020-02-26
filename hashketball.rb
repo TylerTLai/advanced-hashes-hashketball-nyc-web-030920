@@ -195,9 +195,9 @@ def player_stats(players_name)
   game_hash.each do  |place, team|
     team.each do |attribute, data|
       if attribute == :players
-        data.each |player, value|
+        # data.each |player, value|
           binding.pry
-        end 
+        # end 
       end
     end
   end
