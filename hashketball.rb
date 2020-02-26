@@ -321,3 +321,27 @@ def player_with_longest_name
   end
   return longest_name_player
 end
+
+
+
+def long_name_steals_a_ton?
+  
+  most_steals = 0
+  most_steals_player = ""
+  
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          if player[:points] > most_points
+            most_points = player[:points]
+            most_points_player = player[:player_name]
+            # binding.pry
+          end
+        end
+      end
+    end
+  end
+  return most_points_player
+  
+end 
