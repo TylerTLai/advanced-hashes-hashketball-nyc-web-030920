@@ -255,7 +255,9 @@ end
 
 def winning_team
   
-  
+  game_hash.each do |place, team|
+    binding.pry
+  end
   
 end
 
