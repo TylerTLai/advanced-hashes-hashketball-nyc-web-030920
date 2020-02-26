@@ -234,7 +234,7 @@ end
 def most_points_scored
   
   most_points = 0
-  player = ""
+  most_points_player = ""
   
   game_hash.each do |place, team|
     team.each do |attribute, data|
@@ -242,14 +242,13 @@ def most_points_scored
         data.each do |player|
           if player[:points] > most_points
             most_points = player[:points]
-            player = player[:player_name]
+            most_points_player = player[:player_name]
             binding.pry
           end
         end
       end
     end
   end
-  return player
-
+  return most_points_player
 
 end
