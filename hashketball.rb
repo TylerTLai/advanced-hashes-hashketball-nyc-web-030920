@@ -202,16 +202,6 @@ def player_stats(players_name)
             result = player.delete_if do |k, v|
               k == :player_name
             end
-            # result[:number] = player[:number]
-            # result[:shoe] = player[:shoe]
-            # result[:points] = player[:points]
-            # result[:rebounds] = player[:rebounds]
-            # result[:assists] = player[:assists]
-            # result[:steals] = player[:steals]
-            # result[:blocks] = player[:blocks]
-            # result[:slam_dunks] = player[:slam_dunks]
-            # return result
-            # binding.pry
           end
         end 
       end
