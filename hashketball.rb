@@ -202,7 +202,7 @@ def player_stats(players_name)
             result[:number] = player[:number]
             result[:shoe] = player[:shoe]
             result[:points] = player[:points]
-            result[:rebound] = player[:rebound]
+            result[:rebounds] = player[:rebounds]
             result[:assists] = player[:assists]
             result[:steals] = player[:steals]
             result[:blocks] = player[:blocks]
