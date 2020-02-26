@@ -210,7 +210,17 @@ def player_stats(players_name)
   result
 end
 
+def big_shoe_rebounds
 
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      binding.pry
+    end
+  end
+  
+  #find the player with the largest shoe size.
+  #retunr that player's number of rebounds.
+end
 
 
 
