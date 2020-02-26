@@ -199,7 +199,7 @@ def player_stats(players_name)
       if attribute == :players
         data.each do |player|
           if players_name == player[:player_name]
-            result = player.delete.if do |k, v|
+            result = player.delete_if do |k, v|
               k == :player_name
             end
             # result[:number] = player[:number]
