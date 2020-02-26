@@ -200,7 +200,7 @@ def player_stats(players_name)
         data.each do |player|
           if players_name == player[:player_name]
             result = player.delete_if do |k, v|
-              k == :player_name
+              v == :player_name
             end
             # result[:number] = player[:number]
             # result[:shoe] = player[:shoe]
