@@ -314,5 +314,9 @@ def player_with_longest_name
     end
   end
 
+#go through all the players name
+#count the strings and compare it to longest name
+#return the player with the longest name
+
   
 end
