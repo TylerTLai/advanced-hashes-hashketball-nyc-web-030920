@@ -199,15 +199,18 @@ def player_stats(players_name)
       if attribute == :players
         data.each do |player|
           if players_name == player[:player_name]
-            result[:number] = player[:number]
-            result[:shoe] = player[:shoe]
-            result[:points] = player[:points]
-            result[:rebounds] = player[:rebounds]
-            result[:assists] = player[:assists]
-            result[:steals] = player[:steals]
-            result[:blocks] = player[:blocks]
-            result[:slam_dunks] = player[:slam_dunks]
-            return result
+            result = player.delete.if do |k, v|
+              k == :player_name
+            end
+            # result[:number] = player[:number]
+            # result[:shoe] = player[:shoe]
+            # result[:points] = player[:points]
+            # result[:rebounds] = player[:rebounds]
+            # result[:assists] = player[:assists]
+            # result[:steals] = player[:steals]
+            # result[:blocks] = player[:blocks]
+            # result[:slam_dunks] = player[:slam_dunks]
+            # return result
             # binding.pry
           end
         end 
