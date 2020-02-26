@@ -285,20 +285,9 @@ def winning_team
       binding.pry
     end
     
-    #compare points of home with away
-    
-    # binding.pry
-    # team.each do |attribute, data|
-    #   if attribute == :players
-    #     data.each do |player|
-    #       home_points += player[:points]
-    #       home_points
-    #       binding.pry
-    #     end
-    #   end 
-    # end
-  end
-  
+    if home_points > away_points
+      return 
+
 end
 
 
