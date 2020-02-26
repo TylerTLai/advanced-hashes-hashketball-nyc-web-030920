@@ -192,10 +192,13 @@ end
 
 def player_stats(players_name)
   
+  result = {}
+  
   game_hash.each do  |place, team|
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
+          result[:shoe] = player[:shoe]
           binding.pry
         end 
       end
