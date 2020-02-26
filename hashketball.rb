@@ -259,6 +259,7 @@ def winning_team
   away_points = 0
 
   game_hash.each do |place, team|
+    
     #do home things
     if place == :home
       team.each do |attribute, data|
@@ -285,14 +286,17 @@ def winning_team
       # binding.pry
     end
     
+    #compare the two
     if home_points > away_points
       return "Brookln Nets"
     else
       return "Charlotte Hornets"
     end
+    
+  end
 
 end
 
 
-def player_with_longest_name
-end
+# def player_with_longest_name
+# end
