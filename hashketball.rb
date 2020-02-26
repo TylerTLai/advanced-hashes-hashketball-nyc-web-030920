@@ -243,6 +243,7 @@ def most_points_scored
           if player[:points] > most_points
             most_points = player[:points]
             player = player[:player_name]
+            binding.pry
           end
         end
       end
