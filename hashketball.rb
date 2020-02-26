@@ -333,15 +333,16 @@ def long_name_steals_a_ton?
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          if player[:points] > most_points
-            most_points = player[:points]
-            most_points_player = player[:player_name]
-            # binding.pry
+          if player[:steals] > most_steals
+            most_steals = player[:steals]
+            most_steals_player = player[:player_name]
+            binding.pry
           end
         end
       end
     end
   end
-  return most_points_player
+  
+  return most_steals_player
   
 end 
