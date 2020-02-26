@@ -218,7 +218,7 @@ def big_shoe_rebounds
         data.each do |player|
           player[:shoe]
           binding.pry
-          end
+          
         end
       end
     end
