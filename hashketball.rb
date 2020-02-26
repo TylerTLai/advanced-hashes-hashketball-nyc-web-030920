@@ -262,6 +262,8 @@ def winning_team
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
+          home_points += player[:points]
+          home_points
           binding.pry
         end
       end 
