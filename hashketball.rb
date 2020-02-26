@@ -212,13 +212,12 @@ end
 
 def big_shoe_rebounds
 
-  game_hash.each do |place, team|
+  game_hash.map do |place, team|
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          if player[:shoe]
-            player[:shoe]
-            binding.pry
+          player[:shoe]
+          binding.pry
           end
         end
       end
