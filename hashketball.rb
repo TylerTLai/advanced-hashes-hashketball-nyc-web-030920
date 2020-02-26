@@ -207,7 +207,8 @@ def player_stats(players_name)
             result[:steals] = player[:steals]
             result[:blocks] = player[:blocks]
             result[:slam_dunks] = player[:slam_dunks]
-            binding.pry
+            return result
+            # binding.pry
         end
         end 
       end
