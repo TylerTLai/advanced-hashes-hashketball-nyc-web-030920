@@ -198,15 +198,17 @@ def player_stats(players_name)
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          result[:number] = player[:number]
-          result[:shoe] = player[:shoe]
-          result[:points] = player[:points]
-          result[:rebound] = player[:rebound]
-          result[:assists] = player[:assists]
-          result[:steals] = player[:steals]
-          result[:blocks] = player[:blocks]
-          result[:slam_dunks] = player[:slam_dunks]
-          binding.pry
+          if player == players_name
+            result[:number] = player[:number]
+            result[:shoe] = player[:shoe]
+            result[:points] = player[:points]
+            result[:rebound] = player[:rebound]
+            result[:assists] = player[:assists]
+            result[:steals] = player[:steals]
+            result[:blocks] = player[:blocks]
+            result[:slam_dunks] = player[:slam_dunks]
+            binding.pry
+        end
         end 
       end
     end
