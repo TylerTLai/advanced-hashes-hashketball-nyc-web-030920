@@ -190,7 +190,7 @@ def player_numbers(team_name)
   result
 end
 
-def player_stats(player)
+def player_stats(players_name)
   game_hash
 end
 
